@@ -2196,27 +2196,25 @@ textarea.form-input::-webkit-resizer { display: none; }
   .cv-buttons {
     flex-direction: column;
   }
-  
   .cv-download-btn,
   .cv-view-btn {
     width: 100%;
     justify-content: center;
     min-width: auto;
   }
-  
   .pdf-container {
-    min-height: 500px;
+    min-height: 250px;
   }
-  
+  .pdf-container embed {
+    height: 250px;
+  }
   .pdf-placeholder {
     padding: 20px;
-    min-height: 400px;
+    min-height: 200px;
   }
-  
   .placeholder-icon {
     font-size: 48px;
   }
-  
   .placeholder-content {
     max-width: 300px;
   }

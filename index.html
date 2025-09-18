@@ -2,442 +2,168 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christian Höhne</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Höhne - PhD Candidate in Economics</title>
 
-  <!--
-    - favicon (<link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">)
-  -->
-  <link rel="shortcut icon" href="./assets/images/initials.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/initials.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Main Container -->
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/avatar-me.png" alt="Christian Höhne" width="80">
+                </figure>
 
-  <!--
-    - #MAIN
-  -->
+                <div class="info-content">
+                    <h1 class="name" title="Christian Höhne">Christian Höhne</h1>
+                    <p class="title">PhD Candidate in Economics</p>
+                </div>
 
-  <main>
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
 
-    
-    <!--
-      - #SIDEBAR
-    -->
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
 
-    <aside class="sidebar" data-sidebar>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:ch959@cam.ac.uk" class="contact-link">ch959[at]cam.ac.uk</a>
+                        </div>
+                    </li>
+                </ul>
 
-      <div class="sidebar-info">
+                <div class="separator"></div>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-me.png" alt="chh959" width="80">
-        </figure>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/christian-höhne-8a4b85130/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://x.com/HoehneChristian" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="mailto:ch959@cam.ac.uk" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
 
-        <div class="info-content">
-          <h1 class="name" title="chh959">Christian Höhne</h1>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link active">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="cv.html" class="navbar-link">CV</a>
+                    </li>
+                </ul>
+            </nav>
 
-          <p class="title">PhD Candidate in Economics</p>
+            <!-- About Content -->
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I am a third year PhD student in Economics at the University of Cambridge and a Cusanuswerk, Cambridge Trust, and Kurt Hahn Trust scholar.
+                    </p>
+
+                    <p>
+                        I am passionate about Behavioral Political Economy and Experimental Economics. Specifically, I am interested in the effect of (political) information and institutional environments on how individuals perceive, trust, and cooperate with each other.
+                    </p>
+
+                    <p>
+                        Before starting my PhD, I worked as Pre-Doctoral Fellow at the Hub for Equal Representation at the LSE. I received my MSc in Economics at the London School of Economics and completed my BSc in Economics at the University of Mannheim.
+                    </p>
+                </section>
+
+                <!-- Research Section -->
+                <section class="service">
+                    <h3 class="h3 service-title">My Research</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item research-item" data-research="paper1">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/icon-pola.svg" alt="research icon" width="50">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h5 class="h5 service-item-title">More Bark Than Bite? Affective Polarization Around The 2024 U.S. Presidential Election</h5>
+                                <p class="service-item-text">with Toke Aidt and Edoardo Gallo.</p>
+                                <p class="click-hint">(Click to view abstract)</p>
+                                
+                                <div class="research-abstract" style="display: none;">
+                                    <p>
+                                        This is an abstract Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequuntur quaerat laudantium officiis eum laborum quo illo nihil optio nemo commodi minus et inventore, culpa aut enim rerum nobis aliquid quam cum maiores ratione amet sint. Iste quidem excepturi voluptas ratione rerum nesciunt quis voluptatibus id repellendus corrupti laudantium cupiditate in ea enim error repudiandae magnam, eum labore dolore et. Unde magnam voluptatem optio natus debitis, maiores sit expedita rerum assumenda voluptatibus minus laudantium saepe vitae nemo molestias ipsam recusandae. Debitis nostrum accusamus adipisci sit molestias soluta quas quibusdam nisi incidunt! Commodi, doloremque maiores pariatur rem laboriosam blanditiis sunt eos.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="service-item research-item" data-research="paper2">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/icon-info.svg" alt="research icon" width="50">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h5 class="h5 service-item-title">Tying Yourself to The Mast - Informational Regimes and Public Good Provision</h5>
+                                <p class="service-item-text">with Edoardo Gallo.</p>
+                                <p class="click-hint">(Click to view abstract)</p>
+                                
+                                <div class="research-abstract" style="display: none;">
+                                    <p>
+                                        This is an abstract Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequuntur quaerat laudantium officiis eum laborum quo illo nihil optio nemo commodi minus et inventore, culpa aut enim rerum nobis aliquid quam cum maiores ratione amet sint. Iste quidem excepturi voluptas ratione rerum nesciunt quis voluptatibus id repellendus corrupti laudantium cupiditate in ea enim error repudiandae magnam, eum labore dolore et. Unde magnam voluptatem optio natus debitis, maiores sit expedita rerum assumenda voluptatibus minus laudantium saepe vitae nemo molestias ipsam recusandae. Debitis nostrum accusamus adipisci sit molestias soluta quas quibusdam nisi incidunt! Commodi, doloremque maiores pariatur rem laboriosam blanditiis sunt eos.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:ch959@cam.ac.uk" class="contact-link">ch959[at]cam.ac.uk</a>
-            </div>
-
-          </li>
-
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/christian-höhne-8a4b85130/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://x.com/HoehneChristian" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-              <!--<img src="./assets/images/logo.svg
-                " alt="logo X" width="25">-->
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="mailto:ch959@cam.ac.uk" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-          
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-        </ul>
-
-      </nav>
-
-
-
-
-
-     
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a third year PhD student in Economics at the University of Cambridge and a Cusanuswerk, Cambridge Trust, and Kurt Hahn Trust scholar.
-          </p>
-
-          <p>
-            I am passionate about Behavioral Political Economy and Experimental Economics. 
-            Specifically, I am interested in the effect of (political) information and institutional environments on how individuals perceive, trust, and cooperate with each other.
-          </p>
-
-          <p>
-            Before starting my PhD, I worked as Pre-Doctoral Fellow at the Hub for Equal Representation at the LSE. 
-            I received my MSc in Economics at the London School of Economics and completed my BSc in Economics at the Unviersity of Mannheim.
-          </p>
-        </section>
-
-<!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">My Research</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-pola.svg
-                " alt="design icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h5 class="h5 service-item-title">More Bark Than Bite? Affective Polarization Around The 2024 U.S. Presidential Election</h5>
-
-                <p class="service-item-text">
-                  with Toke Aidt and Edoardo Gallo.
-                </p>
-                <p style="color:white;">
-                  (Click to view abstract)
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-info.svg" alt="Web development icon" width="50">
-              </div>
-
-              <div class="service-content-box">
-                <h5 class="h5 service-item-title">Tying Yourself to The Mast - Informational Regimes and Public Good Provision</h5>
-
-                <p class="service-item-text">
-                  with Edoardo Gallo.
-                </p>
-                <p style="color:white;">
-                  (Click to view abstract)
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/research.js"></script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

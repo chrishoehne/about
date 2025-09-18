@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Höhne - CV</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/initials.ico" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="../assets/images/avatar-me.png" alt="Christian Höhne" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Christian Höhne">Christian Höhne</h1>
+                    <p class="title">PhD Candidate in Economics</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:ch959@cam.ac.uk" class="contact-link">ch959[at]cam.ac.uk</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/christian-höhne-8a4b85130/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://x.com/HoehneChristian" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="mailto:ch959@cam.ac.uk" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="cv.html" class="navbar-link active">CV</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CV Content -->
+            <article class="cv active" data-page="cv">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="cv-actions">
+                    <div class="cv-buttons">
+                        <a href="./assets/cv/Christian_Hoehne_CV.pdf" class="cv-download-btn" target="_blank">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            <span>View CV in new window</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="cv-viewer">
+                    <div class="pdf-container">
+                        <embed src="./assets/cv/Christian_Hoehne_CV.pdf" type="application/pdf" width="100%" height="800px">
+                        <div class="pdf-fallback">
+                            <p>Your browser doesn't support PDF viewing. Please use the buttons above to download or view the CV in a new tab.</p>
+                            <a href="./assets/cv/Christian_Hoehne_CV.pdf" class="fallback-link" download>Download CV</a>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- Optional: Brief Education and Experience sections for SEO/accessibility -->
+                <section class="cv-summary">
+                    <h3 class="h3">Education & Experience Summary</h3>
+                    
+                    <div class="timeline-section">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <h4 class="h4">Education</h4>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h5 class="h5 timeline-item-title">PhD in Economics</h5>
+                            <span>ADD YEAR HERE - present</span>
+                            <p class="timeline-text">University of Cambridge</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h5 class="h5 timeline-item-title">MSc in Economics</h5>
+                            <span>ADD YEAR HERE</span>
+                            <p class="timeline-text">London School of Economics</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h5 class="h5 timeline-item-title">BSc in Economics</h5>
+                            <span>ADD YEAR HERE</span>
+                            <p class="timeline-text">University of Mannheim</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="briefcase-outline"></ion-icon>
+                            </div>
+                            <h4 class="h4">Experience</h4>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h5 class="h5 timeline-item-title">Pre-Doctoral Fellow</h5>
+                            <span>2021 — 2022</span>
+                            <p class="timeline-text">Hub for Equal Representation, London School of Economics</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

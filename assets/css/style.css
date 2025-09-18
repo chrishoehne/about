@@ -1880,3 +1880,344 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #ESSENTIAL NEW STYLES FOR CV & RESEARCH
+\*-----------------------------------*/
+
+/* CV Page Action Buttons */
+.cv-actions {
+  margin-bottom: 30px;
+}
+
+.cv-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cv-download-btn,
+.cv-view-btn {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  text-decoration: none;
+  min-width: 150px;
+}
+
+.cv-download-btn::before,
+.cv-view-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.cv-download-btn:hover,
+.cv-view-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.cv-download-btn:hover::before,
+.cv-view-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.cv-download-btn ion-icon,
+.cv-view-btn ion-icon {
+  font-size: 18px;
+}
+
+.cv-note {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* PDF Container and Placeholder */
+.pdf-container {
+  position: relative;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.pdf-container embed {
+  display: block;
+  border-radius: 14px;
+}
+
+.pdf-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  padding: 40px;
+}
+
+.placeholder-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.placeholder-icon {
+  font-size: 64px;
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 20px;
+}
+
+.placeholder-content h3 {
+  color: var(--white-2);
+  margin-bottom: 15px;
+  font-size: var(--fs-2);
+}
+
+.placeholder-content p {
+  color: var(--light-gray);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.placeholder-content code {
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: var(--fs-7);
+}
+
+.placeholder-actions {
+  margin-top: 25px;
+}
+
+.placeholder-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: var(--fs-6);
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.placeholder-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.placeholder-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.placeholder-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+/* PDF Fallback for unsupported browsers */
+.pdf-fallback {
+  display: none;
+  text-align: center;
+  padding: 50px;
+  color: var(--light-gray);
+}
+
+.pdf-fallback p {
+  margin-bottom: 20px;
+  font-size: var(--fs-6);
+}
+
+.fallback-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid var(--orange-yellow-crayola);
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+.fallback-link:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+/* CV Summary Timeline Styles */
+.cv-summary {
+  margin-top: 40px;
+}
+
+.cv-summary .h3 {
+  margin-bottom: 25px;
+  color: var(--white-2);
+}
+
+.timeline-section {
+  margin-bottom: 30px;
+}
+
+.timeline-section .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.timeline-section .timeline-item {
+  margin-left: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.timeline-section .timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 25px);
+  background: var(--jet);
+}
+
+.timeline-section .timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-section .timeline-item-title {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  margin-bottom: 5px;
+}
+
+.timeline-section span {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timeline-section .timeline-text {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+/* Research Paper Interactions */
+.research-item {
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.research-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
+.click-hint {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.research-abstract {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--jet);
+  animation: slideDown 0.3s ease-out;
+}
+
+.research-abstract p {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: left;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+    padding-top: 15px;
+  }
+}
+
+.research-item.expanded .click-hint {
+  display: none;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 580px) {
+  .cv-buttons {
+    flex-direction: column;
+  }
+  
+  .cv-download-btn,
+  .cv-view-btn {
+    width: 100%;
+    justify-content: center;
+    min-width: auto;
+  }
+  
+  .pdf-container {
+    min-height: 500px;
+  }
+  
+  .pdf-placeholder {
+    padding: 20px;
+    min-height: 400px;
+  }
+  
+  .placeholder-icon {
+    font-size: 48px;
+  }
+  
+  .placeholder-content {
+    max-width: 300px;
+  }
+}
